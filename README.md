@@ -29,6 +29,19 @@ Les identifiants se changent par variables d'environnement :
 S3_ACCESS_KEY=... S3_SECRET_KEY=... SSH_PASSWORD=... docker compose up -d --build
 ```
 
+## Terraform (réseau + Nginx)
+
+Prérequis : Terraform >= 1.9 (`brew install hashicorp/tap/terraform`).
+
+```bash
+cd terraform
+terraform init
+terraform apply      # Nginx sur http://localhost:8080
+terraform destroy
+```
+
+Comparaison avec la même chose faite à la main : [NOTE.md](NOTE.md).
+
 ## Arrêter
 
 ```bash
